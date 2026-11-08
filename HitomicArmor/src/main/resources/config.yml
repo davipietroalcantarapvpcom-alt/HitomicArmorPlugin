@@ -1,0 +1,119 @@
+# =====================================================================
+#  HitomicArmor - configuração
+#  Cores: use & (ex.: &5 roxo escuro, &d roxo claro, &c vermelho).
+#  Depois de editar, use /hitomic recarregar (precisa de hitomicarmor.admin).
+# =====================================================================
+
+effects:
+  # A cada quantos ticks o plugin verifica os equipamentos de cada jogador (20 ticks = 1s).
+  check-interval-ticks: 10
+  # Duração (ticks) dos efeitos aplicados; eles são renovados automaticamente enquanto
+  # as condições forem cumpridas. 400 ticks = 20s.
+  duration-ticks: 400
+  # Nível de cada efeito por situação (1 = nível I, 2 = nível II ...; 0 = não aplica).
+  levels:
+    armor:        # 4 peças da armadura Hitomic
+      strength: 2
+      speed: 2
+      regeneration: 1
+    wing:         # Asa Hitomic na mão secundária (offhand)
+      strength: 1
+      speed: 1
+      regeneration: 0
+    combo:        # armadura completa + Asa Hitomic no offhand (substitui os outros níveis)
+      strength: 3
+      speed: 3
+      regeneration: 1
+
+items:
+  # durability: 0 = igual ao item base (Netherite para armadura/ferramentas/espada,
+  # vanilla para arco e escudo). Valores > 0 sobrescrevem a durabilidade máxima.
+  capacete:
+    name: "&5&lCapacete Hitomic"
+    durability: 0
+    lore:
+      - "&7Armadura de cristal violeta forjada para a Hitomic MC."
+      - "&5Proteção, durabilidade e resistência de Netherite."
+      - "&dCom as 4 peças: Força II, Velocidade II e Regeneração I."
+  peitoral:
+    name: "&5&lPeitoral Hitomic"
+    durability: 0
+    lore:
+      - "&7Armadura de cristal violeta forjada para a Hitomic MC."
+      - "&5Proteção, durabilidade e resistência de Netherite."
+      - "&dCom as 4 peças: Força II, Velocidade II e Regeneração I."
+  calcas:
+    name: "&5&lCalças Hitomic"
+    durability: 0
+    lore:
+      - "&7Armadura de cristal violeta forjada para a Hitomic MC."
+      - "&5Proteção, durabilidade e resistência de Netherite."
+      - "&dCom as 4 peças: Força II, Velocidade II e Regeneração I."
+  botas:
+    name: "&5&lBotas Hitomic"
+    durability: 0
+    lore:
+      - "&7Armadura de cristal violeta forjada para a Hitomic MC."
+      - "&5Proteção, durabilidade e resistência de Netherite."
+      - "&dCom as 4 peças: Força II, Velocidade II e Regeneração I."
+  asa:
+    name: "&5&lAsa Hitomic"
+    lore:
+      - "&7Uma asa sombria com detalhes carmesim."
+      - "&dNa mão secundária: Força I e Velocidade I."
+      - "&cCom a armadura completa: Força III, Velocidade III e Regeneração I."
+  espada:
+    name: "&5&lEspada Hitomic"
+    durability: 0
+    lore:
+      - "&7Lâmina de cristal violeta."
+      - "&5Atributos de Netherite."
+  picareta:
+    name: "&5&lPicareta Hitomic"
+    durability: 0
+    lore:
+      - "&7Ferramenta de cristal violeta."
+      - "&5Atributos de Netherite."
+  machado:
+    name: "&5&lMachado Hitomic"
+    durability: 0
+    lore:
+      - "&7Ferramenta de cristal violeta."
+      - "&5Atributos de Netherite."
+  pa:
+    name: "&5&lPá Hitomic"
+    durability: 0
+    lore:
+      - "&7Ferramenta de cristal violeta."
+      - "&5Atributos de Netherite."
+  enxada:
+    name: "&5&lEnxada Hitomic"
+    durability: 0
+    lore:
+      - "&7Ferramenta de cristal violeta."
+      - "&5Atributos de Netherite."
+  arco:
+    name: "&5&lArco Hitomic"
+    durability: 0
+    lore:
+      - "&7Arco sombrio de cristal violeta."
+  escudo:
+    name: "&5&lEscudo Hitomic"
+    durability: 0
+    lore:
+      - "&7Escudo sombrio de cristal violeta."
+
+messages:
+  prefix: "&5[Hitomic] &r"
+  no-permission: "&cVocê não tem permissão para isso (hitomicarmor.admin)."
+  player-only: "&cInforme um jogador: este comando precisa de um alvo quando usado pelo console."
+  player-not-found: "&cJogador não encontrado."
+  usage-armadura: "&eUso: &f/armadura hitomic [jogador]"
+  usage-hitomic: "&eUso: &f/hitomic <espada|ferramentas|arco|asa|escudo|armadura|kit|recarregar> [jogador]"
+  given: "&aVocê recebeu: &f%item%"
+  given-other: "&aEntregue a &f%player%&a: &f%item%"
+  inventory-full: "&eInventário cheio: o excedente foi dropado no chão."
+  reloaded: "&aConfiguração recarregada."
+  group-armor: "armadura Hitomic (4 peças)"
+  group-tools: "ferramentas Hitomic"
+  group-kit: "kit Hitomic completo"

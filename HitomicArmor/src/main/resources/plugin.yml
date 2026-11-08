@@ -1,0 +1,25 @@
+name: HitomicArmor
+version: '${project.version}'
+main: com.hitomic.armor.HitomicArmorPlugin
+api-version: '26.3'
+author: Hitomic MC
+website: hitomic
+description: Armadura, Asa e arsenal exclusivos do servidor Hitomic MC.
+softdepend: [LuckPerms]
+
+commands:
+  armadura:
+    description: Entrega a armadura Hitomic.
+    usage: /armadura hitomic [jogador]
+    permission: hitomicarmor.admin
+    permission-message: '§cVocê não tem permissão (hitomicarmor.admin).'
+  hitomic:
+    description: Entrega os equipamentos Hitomic.
+    usage: /hitomic <espada|ferramentas|arco|asa|escudo|armadura|kit|recarregar> [jogador]
+    permission: hitomicarmor.admin
+    permission-message: '§cVocê não tem permissão (hitomicarmor.admin).'
+
+permissions:
+  hitomicarmor.admin:
+    description: Permite usar todos os comandos do HitomicArmor.
+    default: op

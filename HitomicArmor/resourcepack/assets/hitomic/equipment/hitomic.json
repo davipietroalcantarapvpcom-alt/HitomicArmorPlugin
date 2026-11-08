@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "hitomic:hitomic"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "hitomic:hitomic"
+      }
+    ]
+  }
+}
