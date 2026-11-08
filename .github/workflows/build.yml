@@ -11,20 +11,21 @@ jobs:
 
     steps:
       - name: Baixar projeto
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Configurar Java 25
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: '25'
           cache: maven
+          cache-dependency-path: HitomicArmor/pom.xml
 
       - name: Compilar plugin
-        run: mvn -B clean package
+        run: mvn -B -f HitomicArmor/pom.xml clean package
 
       - name: Salvar JAR
         uses: actions/upload-artifact@v4
         with:
           name: HitomicArmor
-          path: target/HitomicArmor.jar
+          path: HitomicArmor/target/HitomicArmor.jar
